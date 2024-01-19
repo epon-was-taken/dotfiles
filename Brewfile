@@ -24,3 +24,4 @@ brew "hudochenkov/sshpass/sshpass"
 # Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
 # Test 1
+# Test 2
