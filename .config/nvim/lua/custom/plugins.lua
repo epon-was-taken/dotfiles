@@ -26,6 +26,14 @@ local plugins = {
     end,
   },
 
+  {
+    'kdheepak/lazygit.nvim',
+    lazy = false,
+    dependencies = {
+      'nvim-lua/plenary.nvim',
+    },
+  },
+
 }
 
 return plugins
