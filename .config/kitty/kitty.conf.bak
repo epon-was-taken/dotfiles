@@ -19,7 +19,7 @@ scrollback_lines        10000
 ####################
 # URL Settings
 ####################
-url_color               #0087bd
+# url_color               #0087bd
 url_style               curly
 
 open_url_with           default
@@ -49,3 +49,9 @@ bell_on_tab             "🔔 "
 ###################
 
 remember_window_size    yes
+
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Macchiato
+include current-theme.conf
+# END_KITTY_THEME
