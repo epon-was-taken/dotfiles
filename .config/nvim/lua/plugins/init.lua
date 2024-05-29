@@ -8,6 +8,13 @@ return {
   },
 
   {
+    "pearofducks/ansible-vim",
+    -- ft = "yaml.ansible",
+    event = "VeryLazy",
+    -- opts = {},
+  },
+
+  {
     "folke/todo-comments.nvim",
     event = "VeryLazy",
     dependencies = {
@@ -35,6 +42,14 @@ return {
     keys = {
       { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
     },
+  },
+
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require("nvchad.configs.lspconfig").defaults()
+      require "configs.lspconfig"
+    end,
   },
 
   -- These are some examples, uncomment them if you want to see them work!
