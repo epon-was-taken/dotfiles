@@ -1,4 +1,74 @@
 return {
+
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "pyright",                  -- python lsp
+        "mypy",                     -- python type checking
+        "ruff",                     -- python linting
+        "debugpy",                  -- python debugger
+        "ansible-language-server",  -- ansible lsp
+      },
+    },
+  },
+
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require("nvchad.configs.lspconfig").defaults()
+      require "configs.lspconfig"
+    end,
+  },
+
+  {
+    "nvimtools/none-ls.nvim",
+    ft = {
+      "python",
+    },
+    opts = {
+      function ()
+        return require "configs.none-ls"
+      end,
+    },
+  },
+
+  {
+    "mfussenegger/nvim-dap",
+  },
+
+  {
+    "rcarriga/nvim-dap-ui",
+    dependencies = "mfussenegger/nvim-dap",
+    config = function()
+      local dap = require("dap")
+      local dapui = require("dapui")
+      dapui.setup()
+      dapui.listeners.after.event_initialized["dapui_config"] = function()
+        dapui.open()
+      end
+      dapui.listeners.after.event_terminated["dapui_config"] = function()
+        dapui.close()
+      end
+      dapui.listeners.after.event_exited["dapui_config"] = function()
+        dapui.close()
+      end
+    end
+  },
+
+  {
+    "mfussenegger/nvim-dap-python",
+    ft = "python",
+    dependencies = {
+      "mfussenegger/nvim-dap",
+      "rcarriga/nvim-dap-ui",
+    },
+    config = function(_, opts)
+      local path = "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
+      require("dap-python").setup(path)
+    end,
+  },
+
   {
     "stevearc/conform.nvim",
     -- event = 'BufWritePre', -- uncomment for format on save
@@ -44,15 +114,7 @@ return {
     },
   },
 
-  {
-    "neovim/nvim-lspconfig",
-    config = function()
-      require("nvchad.configs.lspconfig").defaults()
-      require "configs.lspconfig"
-    end,
-  },
-
-  -- These are some examples, uncomment them if you want to see them work!
+   -- These are some examples, uncomment them if you want to see them work!
   -- {
   --   "neovim/nvim-lspconfig",
   --   config = function()
