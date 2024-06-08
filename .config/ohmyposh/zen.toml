@@ -1,0 +1,62 @@
+schema = 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json'
+
+version = 2
+final_space = true
+console_title_template = '{{ .Shell }} in {{ .Folder }}'
+
+[palette]
+  os = '#ACB0BE'
+  pink = '#F5BDE6'
+  lavender = '#B7BDF8'
+  blue = '#8AADF4'
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+  newline = true
+
+  [[blocks.segments]]
+    type = 'path'
+    style = 'plain'
+    background = 'transparent'
+    foreground = 'p:blue'
+    template = '{{ .Path }}'
+
+    [blocks.segments.properties]
+      style = 'full'
+
+[[blocks]]
+  alignment = "right"
+  type = "prompt"
+
+  [[blocks.segments]]
+  background = "p:lavender"
+  foreground = "#011627"
+  leading_diamond = ""
+  style = "diamond"
+  template = " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} "
+  trailing_diamond = ""
+  type = "git"
+    [blocks.segments.properties]
+    branch_icon = " "
+    fetch_stash_count = true
+    fetch_status = true
+    fetch_upstream_icon = true
+    fetch_worktree_count = true
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+  newline = true
+
+  [[blocks.segments]]
+    type = 'text'
+    style = 'plain'
+    foreground = 'p:pink'
+    background = 'transparent'
+    template = '❯'
+
+[transient_prompt]
+  foreground = 'p:pink'
+  background = 'transparent'
+  template = '❯ '
