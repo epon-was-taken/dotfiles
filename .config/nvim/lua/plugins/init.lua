@@ -39,7 +39,10 @@ return {
 
   {
     "rcarriga/nvim-dap-ui",
-    dependencies = "mfussenegger/nvim-dap",
+    dependencies = {
+      "mfussenegger/nvim-dap",
+      "nvim-neotest/nvim-nio",
+    },
     config = function()
       local dap = require("dap")
       local dapui = require("dapui")
@@ -67,6 +70,11 @@ return {
       local path = "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
       require("dap-python").setup(path)
     end,
+  },
+
+  {
+    "nvim-neotest/nvim-nio",
+
   },
 
   {
