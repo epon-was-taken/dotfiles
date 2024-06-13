@@ -6,7 +6,7 @@ alias lgit='lazygit'
 # History Settings
 
 # Set history file
-export HISTFILE=~/.zsh_history
+export HISTFILE="$HOME/.zsh_history"
 
 # Set history size
 export HISTFILESIZE=1000000000
