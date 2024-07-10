@@ -9,6 +9,7 @@ return {
         "ruff",                     -- python linting
         "debugpy",                  -- python debugger
         "ansible-language-server",  -- ansible lsp
+        "ansible-lint",             -- ansible linting
       },
     },
   },
