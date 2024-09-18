@@ -1,10 +1,11 @@
 # Aliases
-alias l="ls -lh --color"
-alias ll='ls -lah --color'
-alias lgit='lazygit'
+alias l="ls -lh --color=auto"
+alias ll="ls -lah --color=auto"
+alias t="tmux"
+alias k="kubectl"
+alias lg="lazygit"
 
 # History Settings
-
 HISTFILE=~/.zsh_history
 HISTSIZE=100000000
 SAVEHIST=100000000
@@ -20,7 +21,4 @@ setopt EXTENDED_HISTORY
 setopt HIST_FIND_NO_DUPS
 
 # Prompt Engine
-eval "$(oh-my-posh init zsh --config .config/ohmyposh/zen.toml)"
-
-# Syntax Highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+eval "$(starship init zsh)"
