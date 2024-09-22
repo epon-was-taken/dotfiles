@@ -19,10 +19,10 @@ $line_break\
 $character"""
 
 add_newline = true
-palette = 'nord'
+palette = 'macchiato'
 
 [directory]
-style = 'bold fg:dark_blue'
+style = 'bold fg:blue'
 format = '[$path ]($style)'
 truncation_length = 3
 truncation_symbol = '…/'
@@ -57,23 +57,23 @@ pyenv_prefix = ''
 symbol = ' '
 
 [nodejs]
-style = 'blue'
+style = 'sky'
 symbol = ' '
 
 [golang]
-style = 'blue'
+style = 'sky'
 symbol = ' '
 
 [haskell]
-style = 'blue'
+style = 'sky'
 symbol = ' '
 
 [rust]
-style = 'orange'
+style = 'peach'
 symbol = ' '
 
 [ruby]
-style = 'blue'
+style = 'sky'
 symbol = ' '
 
 [package]
@@ -99,31 +99,34 @@ format = '[$symbol]($style)'
 
 [cmd_duration]
 min_time = 500
-style = 'fg:gray'
+style = 'fg:mauve'
 format = '[$duration]($style)'
 
-[palettes.nord]
-dark_blue = '#5E81AC'
-blue = '#81A1C1'
-teal = '#88C0D0'
-red = '#BF616A'
-orange = '#D08770'
-green = '#A3BE8C'
-yellow = '#EBCB8B'
-purple = '#B48EAD'
-gray = '#434C5E'
-black = '#2E3440'
-white='#D8DEE9'
-
-[palettes.onedark]
-dark_blue='#61afef'
-blue='#56b6c2'
-red='#e06c75'
-green='#98c379'
-purple='#c678dd'
-cyan='#56b6c2'
-orange='#be5046'
-yellow='#e5c07b'
-gray='#828997'
-white ='#abb2bf'
-black='#2c323c'
+[palettes.macchiato]
+rosewater='#f4dbd6'
+flamingo='#f0c6c6'
+pink='#f5bde6'
+mauve='#c6a0f6'
+red='#ed8796'
+maroon='#ee99a0'
+peach='#f5a97f'
+yellow='#eed49f'
+green='#a6da95'
+teal='#8bd5ca'
+sky='#91d7e3'
+sapphire='#7dc4e4'
+blue='#8aadf4'
+lavender='#b7bdf8'
+text='#cad3f5'
+subtext_0='#a5adcb'
+subtext_1='#b8c0e0'
+subtext_2='#939ab7'
+overlay_0='#6e738d'
+overlay_1='#8087a2'
+overlay_2='#939ab7'
+surface_0='#363a4f'
+surface_1='#494d64'
+surface_2='#5b6078'
+base='#24273a'
+mantle='#1e2030'
+crust='#181926'
