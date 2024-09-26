@@ -4,4 +4,4 @@
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJQZf7Exc83B+4WkI4G1Drpkyx5xJKkZezW7i70Gmw0P
 
 [includeIf "gitdir:~/dotfiles/"]
-  path = .gitconfig-private
+  path = ~/.gitconfig-private
