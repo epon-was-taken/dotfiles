@@ -22,7 +22,7 @@ add_newline = true
 palette = 'macchiato'
 
 [directory]
-style = 'bold fg:teal'
+style = 'bold fg:sky'
 format = '[$path ]($style)'
 truncation_length = 3
 truncation_symbol = '…/'
