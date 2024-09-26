@@ -1,4 +1,7 @@
 [user]
-  email = 50664702+PatrickReinboth@users.noreply.github.com
-  name = Patrick Reinboth
+	email = patrick.reinboth@mtg.de
+	name = Patrick Reinboth
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJQZf7Exc83B+4WkI4G1Drpkyx5xJKkZezW7i70Gmw0P
+
+[includeIf "gitdir:~/dotfiles/"]
+  path = .gitconfig-private
