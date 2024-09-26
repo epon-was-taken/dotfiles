@@ -20,5 +20,15 @@ setopt EXTENDED_HISTORY
 # Ignore duplicate commands in search
 setopt HIST_FIND_NO_DUPS
 
+# Start ssh-agent
+eval $(ssh-agent)
+
+# Add tmuxifier binary to path
+path+=('/home/patrick/.tmux/plugins/tmuxifier/bin')
+export PATH
+
+# Start tmuxifier
+eval "$(tmuxifier init -)"
+
 # Prompt Engine
 eval "$(starship init zsh)"
