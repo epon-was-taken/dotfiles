@@ -1,5 +1,5 @@
 -- Define a global array of language servers
-local servers = { "pyright", "rust_analyzer", "lua_ls" }
+local servers = { "pyright", "rust_analyzer", "lua_ls", "ansiblels" }
 
 -- Import cmp_nvim_lsp to get default LSP capabilities
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
