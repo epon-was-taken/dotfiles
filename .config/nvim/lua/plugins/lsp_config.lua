@@ -1,5 +1,6 @@
 -- Define a global array of language servers
-local servers = { "pyright", "rust_analyzer", "lua_ls", "ansiblels" }
+local lsp_servers = { "pyright", "rust_analyzer", "lua_ls", "ansiblels" }
+local linters = { "ansible-lint", "yamllint" }
 
 -- Import cmp_nvim_lsp to get default LSP capabilities
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
@@ -21,7 +22,20 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = servers, -- Install the servers defined in the global array
+        ensure_installed = lsp_servers, -- Install the servers defined in the global array
+      })
+    end,
+  },
+
+  {
+    "mfussenegger/nvim-lint"
+  },
+
+  {
+    "rshkarin/mason-nvim-lint",
+    config = function ()
+      require("mason-nvim-lint").setup({
+        ensure_installed = linters,
       })
     end,
   },
@@ -33,7 +47,7 @@ return {
       local lspconfig = require("lspconfig")
 
       -- Loop through each server in the global array and set them up
-      for _, server in ipairs(servers) do
+      for _, server in ipairs(lsp_servers) do
         lspconfig[server].setup({
           capabilities = capabilities, -- Pass the cmp-nvim-lsp capabilities here
           -- Example settings for sumneko_lua (lua_ls) language server
