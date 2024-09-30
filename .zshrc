@@ -22,7 +22,7 @@ setopt EXTENDED_HISTORY
 setopt HIST_FIND_NO_DUPS
 
 # Start ssh-agent
-eval $(ssh-agent)
+eval $(ssh-agent) > /dev/null
 
 export EDITOR=nvim
 
