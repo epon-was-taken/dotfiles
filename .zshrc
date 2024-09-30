@@ -24,6 +24,8 @@ setopt HIST_FIND_NO_DUPS
 # Start ssh-agent
 eval $(ssh-agent)
 
+export EDITOR=nvim
+
 # Add tmuxifier binary to path
 USER_NAME=$(whoami)
 path+=("/home/$USER_NAME/.tmux/plugins/tmuxifier/bin")
