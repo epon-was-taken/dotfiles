@@ -6,6 +6,9 @@ alias tm="tmuxifier"
 alias k="kubectl"
 alias lg="lazygit"
 
+# Set default editor
+export EDITOR=nvim
+
 # History Settings
 HISTFILE=~/.zsh_history
 HISTSIZE=100000000
