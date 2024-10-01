@@ -29,8 +29,5 @@ eval $(ssh-agent) > /dev/null
 
 export EDITOR=nvim
 
-# Start tmuxifier
-eval "$(tmuxifier init -)"
-
 # Prompt Engine
 eval "$(starship init zsh)"
