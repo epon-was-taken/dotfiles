@@ -29,11 +29,6 @@ eval $(ssh-agent) > /dev/null
 
 export EDITOR=nvim
 
-# Add tmuxifier binary to path
-USER_NAME=$(whoami)
-path+=("/home/$USER_NAME/.tmux/plugins/tmuxifier/bin")
-export PATH
-
 # Start tmuxifier
 eval "$(tmuxifier init -)"
 
