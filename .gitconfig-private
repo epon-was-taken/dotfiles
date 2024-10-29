@@ -1,0 +1,6 @@
+[user]
+	email = hello@patrickreinboth.de
+	name = Patrick Reinboth
+
+[commit]
+	gpgsign = false
