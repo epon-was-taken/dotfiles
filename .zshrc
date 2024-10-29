@@ -29,5 +29,13 @@ eval $(ssh-agent) > /dev/null
 
 export EDITOR=nvim
 
+bindkey -v
+bindkey '^R' history-incremental-search-backward
+
+#autoload -U +X bashcompinit && bashcompinit
+#complete -o nospace -C /usr/bin/terraform terraform
+
 # Prompt Engine
 eval "$(starship init zsh)"
+
+
