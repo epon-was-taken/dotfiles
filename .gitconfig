@@ -1,9 +1,0 @@
-[user]
-	email = patrick.reinboth@mtg.de
-	name = Patrick Reinboth
-	signingkey = BF6E1A0D13C58A25
-
-[includeIf "gitdir:~/dotfiles/"]
-  path = ~/.gitconfig-private
-[commit]
-	gpgsign = true
