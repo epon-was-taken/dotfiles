@@ -1,0 +1,3 @@
+export EDITOR=nvim
+export TF_VAR_HCLOUD_TOKEN="iJZziBPf6ppTPsAws85bAk5UK4v6O1WQav9YLgVcS9fx5nHpiDqsbZz3Jei30pCV"
+export TF_VAR_HDNS_TOKEN="s0xTSvAyRn3wk2sARkQXekZY5v8p91Uz"

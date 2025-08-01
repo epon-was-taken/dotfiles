@@ -1,0 +1,6 @@
+alias l="ls -lh --color=auto"
+alias ll="ls -lah --color=auto"
+alias t="tmux"
+alias tt="tmuxinator"
+alias k="kubectl"
+alias lg="lazygit"
