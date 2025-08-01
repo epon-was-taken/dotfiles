@@ -1,5 +1,6 @@
 alias l="ls -lh --color=auto"
 alias ll="ls -lah --color=auto"
+alias hist="history -d"
 alias t="tmux"
 alias tt="tmuxinator"
 alias k="kubectl"
