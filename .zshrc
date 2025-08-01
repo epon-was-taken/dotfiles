@@ -18,8 +18,5 @@ for config_file in "$HOME/.config/zsh"/*.zsh; do
   [[ -r "$config_file" ]] && source "$config_file"
 done
 
-# Start ssh-agent
-# eval $(ssh-agent) > /dev/null
-
 # Prompt Engine
 eval "$(starship init zsh)"
