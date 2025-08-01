@@ -1,6 +1,3 @@
-# Aliases
-
-
 # History Settings
 HISTFILE=~/.zsh_history
 HISTSIZE=100000000
@@ -22,7 +19,7 @@ for config_file in "$HOME/.config/zsh"/*.zsh; do
 done
 
 # Start ssh-agent
-eval $(ssh-agent) > /dev/null
+# eval $(ssh-agent) > /dev/null
 
 # Prompt Engine
 eval "$(starship init zsh)"
