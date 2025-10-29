@@ -8,3 +8,4 @@ for dir in "$HOME/.local/bin" "$HOME/bin" "$HOME/go/bin" "$HOME/.cargo/bin"; do
   esac
 done
 export PATH
+export GOPATH=~/go
