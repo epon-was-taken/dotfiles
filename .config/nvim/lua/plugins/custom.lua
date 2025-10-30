@@ -54,4 +54,9 @@ return {
     },
     cmd = { "CsvViewEnable", "CsvViewDisable", "CsvViewToggle" },
   },
+
+  {
+    "trixnz/sops.nvim",
+    lazy = false,
+  },
 }
