@@ -11,6 +11,7 @@ return {
         "gopls",
         "golangci-lint",
         "gofumpt",
+        "helm-ls",
       },
     },
   },
@@ -28,6 +29,12 @@ return {
       }
       return opts
     end,
+  },
+
+  {
+    "qvalentin/helm-ls.nvim",
+    ft = "helm",
+    opts = {},
   },
 
   -- Ansible filetype detection and useful functions
