@@ -8,3 +8,4 @@
 .config/nvim/data
 .config/nvim/lua/plugins/parrot.lua
 .config/nvim/lazy-lock.json
+.config/zsh/00-environment.zsh
