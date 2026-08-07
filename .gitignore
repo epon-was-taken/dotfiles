@@ -7,3 +7,4 @@
 .config/nvim/*.log
 .config/nvim/data
 .config/nvim/lua/plugins/parrot.lua
+.config/nvim/lazy-lock.json
