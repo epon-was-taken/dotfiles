@@ -20,6 +20,9 @@ return {
     },
   },
 
+  -- SQL
+  { "https://github.com/sqls-server/sqls.vim" },
+
   -- Better syntax hightlighting for asciidoc
   { "habamax/vim-asciidoctor" },
 
@@ -57,6 +60,11 @@ return {
 
   {
     "trixnz/sops.nvim",
+    lazy = false,
+  },
+
+  {
+    "epon-was-taken/nvim-ansible",
     lazy = false,
   },
 }

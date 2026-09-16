@@ -36,20 +36,4 @@ return {
     ft = "helm",
     opts = {},
   },
-
-  -- Ansible filetype detection and useful functions
-  {
-    "mfussenegger/nvim-ansible",
-    event = { "VeryLazy" },
-    keys = {
-      {
-        "<leader>te",
-        function()
-          require("ansible").run()
-        end,
-        desc = "Run Ansible Playbook",
-        { buffer = true, silent = true },
-      },
-    },
-  },
 }
