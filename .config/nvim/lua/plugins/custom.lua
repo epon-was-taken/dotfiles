@@ -62,9 +62,4 @@ return {
     "trixnz/sops.nvim",
     lazy = false,
   },
-
-  {
-    "epon-was-taken/nvim-ansible",
-    lazy = false,
-  },
 }
